@@ -98,13 +98,13 @@ Docker image name **vkushnir/radiusd:aaa**
 >*Print all SQL statements when in debug mode (-x) to ${logdir}/sql*race.sql*
 
 
-    SQL_SOCKS=20
+    SQL_SOCKS=10
 >*Number of sql connections to make to server*
 >*Setting this to LESS than the number of threads means that some threads may starve, and you will see errors like "No connections available and at max connection limit"*
 >*Setting this to MORE than the number of threads means that there are more connections than necessary.*
 
 
-    SQL_DELAY=120
+    SQL_DELAY=60
 >*Number of seconds to dely retrying on a failed database connection (per_socket)*
 
 
@@ -117,7 +117,7 @@ Docker image name **vkushnir/radiusd:aaa**
 >*Use **0** for "no limit".*
 
 
-    READ_CLIENTS=no
+    READ_CLIENTS=yes
 >*Set to 'yes' to read radius clients from the database ('nas' table)*
 >*Clients will ONLY be read on server startup.  For performance and security reasons, finding clients via SQL queries CANNOT be done "live" while the server is running.*
 
