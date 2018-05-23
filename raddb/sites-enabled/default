@@ -195,9 +195,9 @@ authorize {
 #
 
 authenticate {
-#	Auth-Type PAP {
-#		pap
-#	}
+	Auth-Type PAP {
+		pap
+	}
 #	Auth-Type CHAP {
 #		chap
 #	}
