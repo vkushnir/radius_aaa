@@ -228,6 +228,7 @@ authenticate {
 #
 preacct {
 	preprocess
+	acct_unique
 #	IPASS
 	suffix
 #	ntdomain
